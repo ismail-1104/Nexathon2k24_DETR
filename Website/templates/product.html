@@ -80,17 +80,17 @@
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/product">Product</a>
+          <a class="nav-link" href="/product">DCGAN</a>
         </li>
         <li class="nav-item">
-          <!-- <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="/product2">Stable Diffusion</a>
         </li>
-        <li class="nav-item">
+        <!-- <-- <li class="nav-item">
           <a class="nav-link" href="portfolio.html">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
-        </li> -->
+        </li> --> -->
       </ul>
     </div>
   </nav>
@@ -100,14 +100,14 @@
 <section class="hero-area bg-primary" id="parallax">
     <h1 style="text-align: center;">Generate Poster</h1>
     <form action="/product" method="post" style="text-align: center;">
-        <label for="text_input">Enter Text:</label>
+        <label for="text_input" style="color: white;">Enter Text:</label>
         <input type="text" id="text_input" name="text_input" required>
         <button type="submit">Generate Poster</button>
     </form>
 
     {% if image_location %}
-    <h2>Generated Poster:</h2>
-    <img src="{{ image_location }}" alt="Generated Poster">
+    <h2 style="text-align: center;">Generated Poster:</h2>
+    <img src="{{ image_location }}" alt="Generated Poster" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="400">
     {% endif %}
     <img class="img-fluid w-100" src="static/img/illustrations/leaf-bg.png" alt="bg-shape">
   </div>
